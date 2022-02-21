@@ -3,6 +3,9 @@ class Account {
       this.balance = 0.00
     };
 
+  deposit(amount) {
+    this.balance += amount
+  }
 };
 
 

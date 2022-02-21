@@ -1,10 +1,18 @@
-describe("Account", function () {
-    
-  beforeEach(function () {
+describe("Account", function() {
+    var account;
+
+  beforeEach(function() {
     account = new Account()
   })
 
-  it('Account starts with a balance of £0.00', function () {
-    expect(account.balance).toEqual(0.00)
+  it('default balance is £0', function() {
+    expect(account.balance).toEqual(0);
+  })
+
+  describe('Deposit', function() { 
+    it('is possible to deposit money', function() {
+      account.deposit(100);
+      expect(account.balance).toEqual(100);
+    })
   })
 })
