@@ -12,18 +12,18 @@
  ## Usage example
  > node 
 
- > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Account.js
- > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/StatementPrinter.js
- > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Transaction.js
- > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/TransactionPrinter.js
+* > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Account.js
+* > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/StatementPrinter.js
+* > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Transaction.js
+* > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/TransactionPrinter.js
 
- > myAccount.deposit(100);
- > myAccount.withdraw(50);
- > myAccount.deposit(210);
- > myAccount.withdraw(10);
+* > myAccount.deposit(100);
+* > myAccount.withdraw(50);
+* > myAccount.deposit(210);
+* > myAccount.withdraw(10);
  
-date || credit || debit || balance
-etc...
+* date || credit || debit || balance
+* etc...
 
  
 ## Design
