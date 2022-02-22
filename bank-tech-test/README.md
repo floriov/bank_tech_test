@@ -9,7 +9,7 @@
  ## Running tests
  run SpecRunner.html in the browser with Live Server
 
- ## Usage exxample
+ ## Usage example
  > node 
 
  > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Account.js
@@ -23,20 +23,25 @@
 
 ## Design
 
- # Account
+ ### Account
  **Understands its balance and initializes and stores its transactions**
-# Public functions:
-**deposit**
-**withdraw**
-**printStatement**
+#### Public functions:
+deposit,
+withdraw,
+printStatement
 
-# Transaction
-**Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.**
-# Attributes:
-**balance : account balance upon completion of transaction**
-**date : timestamp of the transaction date in dd/mm/yyyy format**
-**credit : transaction amount if deposit, undefined if withdrawal**
-**debit : transaction amount if withdrawal, undefined if deposit**
+### Transaction
+Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.
+#### Attributes:
+balance : account balance upon completion of transaction
+date : timestamp of the transaction date in dd/mm/yyyy format
+credit : transaction amount if deposit, undefined if withdrawal
+debit : transaction amount if withdrawal, undefined if deposit
+
+### Printer
+Understands how to format and print output to the client. Responsible for formatting and logging the transaction data into statements and converting amounts into money format.
+public methods:
+printStatement 
 
 ## User Stories
 As a client,
