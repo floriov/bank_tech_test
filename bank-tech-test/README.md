@@ -66,4 +66,4 @@ So that I can see what type of transactions I did last
 
 ## Testing 
 
-![Alt text](bank-tech-test/images/Screenshot 2022-02-22 at 13.54.43.png "Jasmine Test")
+![Screenshot](Screenshot 2022-02-22 at 13.54.43.png)
