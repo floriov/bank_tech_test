@@ -69,5 +69,5 @@ I want transactions listed with the most recent transaction first,
 So that I can see what type of transactions I did last
 
 ## Testing 
+<img width="1421" alt="Screenshot 2022-02-22 at 15 58 00" src="https://user-images.githubusercontent.com/97796341/155181534-bcd340b4-8c83-4512-83fa-b854fe460e44.png">
 
-<img width="1421" alt="Screenshot 2022-02-22 at 13 54 43" src="https://user-images.githubusercontent.com/97796341/155147639-e7cb4cdb-3f20-497c-b960-e56e61a62d2a.png">
