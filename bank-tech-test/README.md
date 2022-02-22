@@ -1,5 +1,43 @@
 ## Bank Tech Test
 
+## Installation and setup
+ Clone the repo, install the dependenices:
+ git clone https://github.com/floriov/Bank-Tech-Test.git
+ cd bank-tech-test
+ npm install
+
+ ## Running tests
+ run SpecRunner.html in the browser with Live Server
+
+ ## Usage exxample
+ > node 
+
+ > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Account.js
+
+ > account = new Account
+
+ > account.deposit(1000)
+
+ > account.balance 
+  1000
+
+## Design
+
+ # Account
+ **Understands its balance and initializes and stores its transactions**
+# Public functions:
+**deposit**
+**withdraw**
+**printStatement**
+
+# Transaction
+**Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.**
+# Attributes:
+**balance : account balance upon completion of transaction**
+**date : timestamp of the transaction date in dd/mm/yyyy format**
+**credit : transaction amount if deposit, undefined if withdrawal**
+**debit : transaction amount if withdrawal, undefined if deposit**
+
 ## User Stories
 As a client,
 I want to be able to make a deposit, 
