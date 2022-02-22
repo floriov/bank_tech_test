@@ -78,3 +78,6 @@ So that I can see what type of transactions I did last
 ## Testing 
 <img width="1421" alt="Screenshot 2022-02-22 at 15 58 00" src="https://user-images.githubusercontent.com/97796341/155181534-bcd340b4-8c83-4512-83fa-b854fe460e44.png">
 
+
+![Screenshot 2022-02-22 at 17 41 45](https://user-images.githubusercontent.com/97796341/155188103-ad658417-d66a-4924-b67b-b631ff4a1077.png)
+
