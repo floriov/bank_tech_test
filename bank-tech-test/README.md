@@ -30,22 +30,29 @@
 
  ### Account
  **Understands its balance and initializes and stores its transactions**
+ * stores transactions
+ * has a balance
+ * * has a StatementPrinter
 #### Public functions:
 * deposit
 * withdraw
 * summary
 
-### TransactionPrinter
-Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.
-#### Attributes:
-* date
-* amount
-* balance
-
 ### StatementPrinter
-Understands how to format and print output to the client. Responsible for formatting and logging the transaction data into statements and converting amounts into money format.
+#### Attributes:
+* has a TransactionPrinter
+* print() an array of Transactions
+
+### TransactionPrinter
 * public methods:
-transactionPrinter
+print() a single Transaction
+
+### TransactionPrinter
+* has an amount
+* has a balance
+* has a date
+* isDeposit() or isWithdrawal()
+
 
 ## User Stories
 As a client,
