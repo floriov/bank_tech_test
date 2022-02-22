@@ -20,17 +20,26 @@ class Account {
 
 
   deposit(amount) {
+    
     this.balance += amount
+    this.transactions.push(new Transaction(amount, this.balance))
     return this.balance
-    this.transaction.push(new Transaction(amount, this.balance))
   }
 
   withdraw(amount) {
+    
     this.balance -= amount
-   return this.balance
-   this.transactions.push(new Transaction(-amount, this.balance))
+    this.transactions.push(new Transaction(-amount, this.balance))
+    return this.balance
   }
 
+  summary() {
+    this.statementPrinter.print(this.transactions.reverse());
+  };
+
+  insufficientFunds(amount) {
+    return amount > this.balance;
+  }
   
 };
 

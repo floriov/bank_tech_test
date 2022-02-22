@@ -66,4 +66,3 @@ So that I can see what type of transactions I did last
 
 ## Testing 
 
-![Screenshot](Screenshot 2022-02-22 at 13.54.43.png)

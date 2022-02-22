@@ -10,19 +10,19 @@ class Transaction {
     return this.amount;
   } 
  
-  newBalance = function () {
+  newBalance() {
     return this.newBalance;
   };
 
-  date = function () {
+  date() {
     return this.date;
   };
 
-  isDeposit = function () {
+  isDeposit() {
     return this.amount >= 0;
   };
 
-  isWithdrawal = function () {
+  isWithdrawal() {
     return !this.isDeposit();
   };
 

@@ -1,5 +1,3 @@
-'use strict';
-
 
 class StatementPrinter {
 
@@ -26,10 +24,10 @@ class StatementPrinter {
 
     logTransactions(transactions) {
         transactions.forEach(function(transaction) {
-        this._transactionPrinter.print(transaction);
+        this.transactionPrinter.print(transaction);
         }.bind(this));
     };
 
-    StatementPrinter = StatementPrinter;
+    
 
 }

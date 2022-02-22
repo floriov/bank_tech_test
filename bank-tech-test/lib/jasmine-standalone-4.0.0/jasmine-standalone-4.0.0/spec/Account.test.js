@@ -1,4 +1,5 @@
 
+
 describe('Account', function() {
   var statementPrinter;
   var account;
@@ -25,13 +26,14 @@ describe('Account', function() {
       account.deposit(100);
       expect(account.balance).toEqual(100);
     })
-    // it('adds a transaction to transaction list', function() {
-    //   account.deposit(100)
-    //   expect(account.transactions().length).toEqual(1);
-    // })
-    
+    it('adds a transaction to transaction list', function() {
+      account.deposit(10);
+      expect(account.transactions.length).toEqual(1);
+    });
+   
 
-      
+    
+    
   })
 
   describe('Withdrawal', function() { 
@@ -40,11 +42,12 @@ describe('Account', function() {
       account.withdraw(50);
       expect(account.balance).toEqual(50);
     })
-    // it('adds a transaction to transaction list', function() {
-    //   account.deposit(20);
-    //   account.withdraw(5);
-    //   expect(account.transactions().length).toEqual(2);
-    // });
+    it('adds a transaction to transaction list', function() {
+      account.deposit(20);
+      account.withdraw(5);
+      expect(account.transactions.length).toEqual(2);
+    });
+    
   
   })
 
