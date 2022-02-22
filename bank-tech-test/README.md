@@ -13,30 +13,34 @@
  > node 
 
  > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Account.js
+ > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/StatementPrinter.js
+ > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/Transaction.js
+ > .load ./lib/jasmine-standalone-4.0.0/jasmine-standalone-4.0.0/src/TransactionPrinter.js
 
- > account = new Account
+ > myAccount.deposit(100);
+ > myAccount.withdraw(50);
+ > myAccount.deposit(210);
+ > myAccount.withdraw(10);
+ 
+date || credit || debit || balance
+etc...
 
- > account.deposit(1000)
-
- > account.balance 
-  1000
-
+ 
 ## Design
 
  ### Account
  **Understands its balance and initializes and stores its transactions**
 #### Public functions:
-* deposit,
-* withdraw,
-* printStatement
+* deposit
+* withdraw
+* summary
 
-### Transaction
+### TransactionPrinter
 Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.
 #### Attributes:
-* balance : account balance upon completion of transaction
-* date : timestamp of the transaction date in dd/mm/yyyy format
-* credit : transaction amount if deposit, undefined if withdrawal
-* debit : transaction amount if withdrawal, undefined if deposit
+* data
+* amount
+* balance
 
 ### Printer
 Understands how to format and print output to the client. Responsible for formatting and logging the transaction data into statements and converting amounts into money format.
