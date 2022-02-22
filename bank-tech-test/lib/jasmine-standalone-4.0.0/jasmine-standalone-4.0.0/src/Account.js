@@ -1,4 +1,3 @@
-const Transaction = require('./Transaction')
 
 class Account {
     constructor (statementPrinter) {
@@ -35,6 +34,6 @@ class Account {
   
 };
 
-module.exports = Account;
+
 
 

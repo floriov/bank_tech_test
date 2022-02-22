@@ -1,4 +1,3 @@
-const Transaction = require('../src/Transaction')
 
 describe('Transaction', function() {   
     var transaction;
@@ -9,15 +8,15 @@ describe('Transaction', function() {
     });
     
       it('has an amount', function() {
-        expect(transaction.amount()).toEqual(10);
+        expect(transaction.amount).toEqual(10);
       });
     
       it('has a date', function() {
-        expect(transaction.date()).toEqual(date);
+        expect(transaction.date).toEqual(date);
       });
     
       it('has an updated balance', function() {
-        expect(transaction.newBalance()).toEqual(20);
+        expect(transaction.newBalance).toEqual(20);
       });
     
       it('knows when it is a deposit', function() {

@@ -1,5 +1,3 @@
-
-
 class Transaction {
   constructor (amount, newBalance, date = new Date()) {
     this.amount = amount
@@ -30,4 +28,4 @@ class Transaction {
 
 
 }
-module.exports = Transaction;
+
