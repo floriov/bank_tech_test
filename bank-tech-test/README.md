@@ -40,7 +40,7 @@ Stores data from a specific transaction, knows the account balance, date it was 
 
 ### Printer
 Understands how to format and print output to the client. Responsible for formatting and logging the transaction data into statements and converting amounts into money format.
-public methods:
+* public methods:
 printStatement 
 
 ## User Stories
