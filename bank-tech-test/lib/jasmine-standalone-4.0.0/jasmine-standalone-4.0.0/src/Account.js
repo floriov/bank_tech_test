@@ -14,8 +14,8 @@ class Account {
     return this.balance;
   }
 
-  transaction() {
-    return this.transaction;
+  transactions() {
+    return this.transactions;
   }
 
 

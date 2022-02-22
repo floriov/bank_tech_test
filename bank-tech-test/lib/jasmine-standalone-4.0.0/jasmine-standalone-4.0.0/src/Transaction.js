@@ -8,7 +8,7 @@ class Transaction {
 
   amount() {
     return this.amount;
-  } 
+  };
  
   newBalance() {
     return this.newBalance;

@@ -5,9 +5,9 @@ class TransactionPrinter {
     }
 
     date(transaction) {
-    day = String(transaction.date().getDate()).padStart(2, '0');
-    month = String(transaction.date().getMonth() + 1).padStart(2, '0');
-    year = transaction.date().getFullYear();
+    var day = String(transaction.date().getDate()).padStart(2, '0');
+    var month = String(transaction.date().getMonth() + 1).padStart(2, '0');
+    var year = transaction.date().getFullYear();
     return `${day}/${month}/${year}`
     }
 
