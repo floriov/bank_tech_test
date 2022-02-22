@@ -38,7 +38,7 @@
 ### TransactionPrinter
 Stores data from a specific transaction, knows the account balance, date it was created, amount and whether it was a deposit or withdrawal.
 #### Attributes:
-* data
+* date
 * amount
 * balance
 
